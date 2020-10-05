@@ -10,10 +10,9 @@ public class BowlingGame {
 
     public void game() {
         for (int frame = 0 ; frame < 10 ; frame++){
-            System.out.println("Frame number " + frame);
             frame();
         }
-        System.out.println(" i = " + i);
+
         if (pins[18] == 10) {
             i--;
             frame();
@@ -45,8 +44,6 @@ public class BowlingGame {
         Random random = new Random();
         int knackedDownPins = random.nextInt(maxPins+1);
         pins[i] = knackedDownPins;
-
-        System.out.println("Roll number: " + i);
         i++;
         return knackedDownPins;
     }
